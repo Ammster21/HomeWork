@@ -42,12 +42,12 @@ func fibonacci (n: Int) -> Int{
         return fibonacci(n: n - 1) + fibonacci(n: n - 2)
     }
     // Добавляем элементы
-//    var massiv: [Int] = Array(0...50)
-//    for n in massiv {
-//        massiv.append(fibonacci(n: n))
-//    }
+    //    var massiv: [Int] = Array(0...50)
+    //    for n in massiv {
+    //        massiv.append(fibonacci(n: n))
+    //    }
     
-
+    
     
     //6 Написать функцию которая находит факториал числа N
     func factorial(_ n: Int) -> Int {
@@ -66,8 +66,8 @@ func fibonacci (n: Int) -> Int{
         return result
     }
     
-//    let resultat = factorial(5)
-//    print(resultat)
+    //    let resultat = factorial(5)
+    //    print(resultat)
     
     //7. Простой калькулятор.Вводим два числа и операцию (сложение, вычитание, умножение, деление), после чего выводим результат.==
     func calc (number1: Int, opearation: Character, number2: Int) {
@@ -90,73 +90,77 @@ func fibonacci (n: Int) -> Int{
     func longLine (line: String){
         print(line.count)
     }
-    
+
     //9. Напишите функцию которая определит максимальное числа из трех.
-    func maxNumber (number1: Int, number2: Int, number3: Int) {
-        if number1 > number2 && number1 > number3 {
-            print("number1 max number")
-        }
-        else if number2 > number1 && number2 > number3 {
-            print("number2 max number")
-        }
-        else if number3 > number1 && number3 > number2 {
-            print("number3 max number")
-        }
-    }
-    
-    //10.Функция которая сделает реверс строки которую введет пользователь
-    func reversLine (text: String){
-        for item in text.reversed(){
-            print(item, terminator : " ")
-        }
-    }
-    //11. Функция которая конвертирует время из секунд в часы, минуты и секунды.
-    
-    func convertSec (sec: Int){
-        var min: Int
-        var hour: Int
-        if sec < 60 {
-            print("Itogo \(sec) secund")
-        }
-        if sec < 3600 {
-            min = sec / 60
-            print("Itogo \(min) minut i \(sec - min * 60) secund")
-        } else {
-            min = sec / 60
-            if min >= 60 {
-                hour = min / 60
-                print("Itogo \(hour) chasov, \(min) minut i \(sec - min * 60) secund")
+        func maxNumber (number1: Int, number2: Int, number3: Int) {
+            if number1 > number2 && number1 > number3 {
+                print("number1 max number")
+            }
+            else if number2 > number1 && number2 > number3 {
+                print("number2 max number")
+            }
+            else if number3 > number1 && number3 > number2 {
+                print("number3 max number")
             }
         }
-    }
+print(maxNumber(number1: 23, number2: 32, number3: 13))
     
     
-    //12 и 15. Функция которая считает количество слов в строке
-    func numberWords (words: String){
-        let words = words.split(separator: " ")
-        print(words.count)
-    }
+    
+    //    //10.Функция которая сделает реверс строки которую введет пользователь
+    //    func reversLine (text: String){
+    //        for item in text.reversed(){
+    //            print(item, terminator : " ")
+    //        }
+    //    }
+    //    //11. Функция которая конвертирует время из секунд в часы, минуты и секунды.
+    //
+    //    func convertSec (sec: Int){
+    //        var min: Int
+    //        var hour: Int
+    //        if sec < 60 {
+    //            print("Itogo \(sec) secund")
+    //        }
+    //        if sec < 3600 {
+    //            min = sec / 60
+    //            print("Itogo \(min) minut i \(sec - min * 60) secund")
+    //        } else {
+    //            min = sec / 60
+    //            if min >= 60 {
+    //                hour = min / 60
+    //                print("Itogo \(hour) chasov, \(min) minut i \(sec - min * 60) secund")
+    //            }
+    //        }
+    //    }
+    //
+    //
+    //    //12 и 15. Функция которая считает количество слов в строке
+    //    func numberWords (words: String){
+    //        let words = words.split(separator: " ")
+    //        print(words.count)
+    //    }
     
     //13. Функция которая выведит каждое слово строки на новой строке
-    func newLine (text: String){
-        for item in text {
-            if item == " "{
-                print("\n")
-            } else {
-                print(item, terminator: "")
-            }
-        }
-    }
+    //    func newLine (text: String){
+    //        for item in text {
+    //            if item == " "{
+    //                print("\n")
+    //            } else {
+    //                print(item, terminator: "")
+    //            }
+    //        }
+    //    }
     
-// 14. Функция которая выведет каждое слово через определенный интервал времени
+    // 14. Функция которая выведет каждое слово через определенный интервал времени
     
-    func timeSend (words: String){
-        for index in words {
-            if index != " "{
-                print(index, terminator: "")
-            } else {
-                print(" ")
-                sleep(10)
-            }
-        }
+    //    func timeSend (words: String){
+    //        for index in words {
+    //            if index != " "{
+    //                print(index, terminator: "")
+    //            } else {
+    //                print(" ")
+    //                sleep(10)
+    //            }
+    //        }
     
+}
